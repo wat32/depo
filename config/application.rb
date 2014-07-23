@@ -18,6 +18,17 @@ module Depo
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ru
+    #SimpleForm.browser_validations = false
+
+    config.generators do |g|
+      g.test_framework :rspec, :view_spec => false,
+                       :fixture => true,
+                       :fixture_replacement => 'factory_girl'
+
+      g.helper = false
+      g.assets = false
+      g.fixture_replacement :factory_girl, :dir =>'spec/factories'
+    end
   end
 end
