@@ -37,7 +37,8 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'heroku'
+gem 'rails_12factor'
 group :development, :test do
   gem 'pry-rails'
   gem 'pry'
