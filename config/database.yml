@@ -32,7 +32,7 @@ development:
   username: depo_user
 
   # The password associated with the postgres role (username).
-  password: 'qwerty'
+  password: '123QWEasd'
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: depo_production
-#  username: depo
-  password: <%= ENV['DEPO_DATABASE_PASSWORD'] %>
+#  username: depo_user
+  password: '123QWEasd'
