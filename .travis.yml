@@ -18,3 +18,14 @@ script:
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database travis_ci_test;' -U postgres
+
+
+
+  deploy:
+    provider: heroku
+    api_key:
+      secure: HvUouhGHLbmpEOGvPptH3jalrnAjiMnjMAYF99G+t63LBq6U0KNve+qfyCE6aoNYEqkut/lwqjIKEgOwkiolwmzWAqt5RNwWZ/awaVwFz5ysazOjOwvKUOLgCL2/mjLWwSbYTlhnkUWUXWj33zea4DvKIZXJbYlI07qnxii3KvU=
+    app: depositarium
+    on:
+      repo: wat32/depo
+      branch: dev
