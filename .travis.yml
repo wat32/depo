@@ -2,6 +2,11 @@ language: ruby
 rvm:
   - 2.1.0
 
+cache:
+  -apt
+  -bundler
+
+
 env:
   -DB=postgresql
 
