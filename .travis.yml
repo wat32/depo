@@ -18,3 +18,5 @@ deploy:
   app:
     dev: dev-depositarium
     master: depositarium
+
+#TODO: if pull request to dev branch, don't deploy, why?
