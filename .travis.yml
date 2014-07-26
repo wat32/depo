@@ -1,31 +1,20 @@
 language: ruby
 rvm:
-  - 2.1.0
-
-cache:
-  -apt
-  -bundler
-
-
-env:
-  -DB=postgresql
-
+- 2.1.0
+cache: -apt -bundler
+env: -DB=postgresql
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake
-
-
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake
 before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
 
 
-
-  deploy:
-    provider: heroku
-    api_key:
-      secure: HvUouhGHLbmpEOGvPptH3jalrnAjiMnjMAYF99G+t63LBq6U0KNve+qfyCE6aoNYEqkut/lwqjIKEgOwkiolwmzWAqt5RNwWZ/awaVwFz5ysazOjOwvKUOLgCL2/mjLWwSbYTlhnkUWUXWj33zea4DvKIZXJbYlI07qnxii3KvU=
-    app: depositarium
-    on:
-      repo: wat32/depo
-      branch: dev
+deploy:
+  provider: heroku
+  api_key:
+    secure: RNEulTh5A9Ivk2aKLjiiykuZyGslbYSaMVlof0KPH9Rg3RUgTMRf/qmrIUSOJCSC5KD1NUQ/ZRuiLsBrA7VUUBBxdAx7teN30jKOiMxV2gV5+K3ujXk9ZdRcX8dKJ2NkO/Eo/6QY2Ji6MD8wJQU9YewOdC+fQ7FkC7tKcC1iwgc=
+  app: depositarium
+  on:
+    repo: wat32/depo
