@@ -42,7 +42,7 @@ gem 'rails_12factor'
 
 # Gem for autorization
 gem 'devise'
-
+# Gem for localizations
 gem 'i18n'
 
 group :development, :test do
