@@ -45,6 +45,8 @@ gem 'devise'
 # Gem for localizations
 gem 'i18n'
 
+gem 'enumerize'
+gem 'carrierwave'
 group :development, :test do
   gem 'pry-rails'
   gem 'pry'
