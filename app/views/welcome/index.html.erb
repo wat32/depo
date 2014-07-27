@@ -2,6 +2,7 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
+<%= link_to 'New Document', new_document_path %>
 
 <% if user_signed_in? %>
     <span>Здравствуйте, <%= current_user.email %></span>

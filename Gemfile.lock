@@ -32,6 +32,11 @@ GEM
     bcrypt (3.1.7)
     bcrypt (3.1.7-x64-mingw32)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -50,6 +55,8 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    enumerize (0.8.0)
+      activesupport (>= 3.2)
     erubis (2.7.0)
     excon (0.33.0)
     execjs (2.2.1)
@@ -198,9 +205,11 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
+  carrierwave
   coffee-rails (~> 4.0.0)
   database_cleaner
   devise
+  enumerize
   factory_girl_rails
   faker (~> 1.2.0)
   heroku
