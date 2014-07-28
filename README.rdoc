@@ -4,7 +4,9 @@
 Фиксация веб и документов ,с подписью сохраниение URL страниц в интернете , локально на сервере , фиксация изменение с помошью цифровой подписи , целостность базы данных
 
 
-Heroku http://depositarium.herokuapp.com/
+Master http://depositarium.herokuapp.com/
+Dev http://dev-depositarium.herokuapp.com/
+
 
 Примерное описание http://ain.ua/2013/08/07/135321
 
