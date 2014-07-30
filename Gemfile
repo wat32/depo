@@ -47,6 +47,13 @@ gem 'i18n'
 
 gem 'enumerize'
 gem 'carrierwave'
+gem 'simple_form'
+gem 'slim'
+gem 'slim-rails'
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer'
+gem 'less-rails'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry'
