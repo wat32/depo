@@ -1,0 +1,37 @@
+p#notice
+  = notice
+p
+  strong
+    | Type:
+  = @document.type
+p
+  strong
+    | Url:
+  = @document.url
+p
+  strong
+    | Md5:
+  = @document.md5
+p
+  strong
+    | Password:
+  = @document.password
+p
+  strong
+    | Title:
+  = @document.title
+p
+  strong
+    | Description:
+  = @document.description
+p
+  strong
+    | Access type:
+  = @document.access_type
+p
+  strong
+    | User:
+  = @document.user
+= link_to 'Edit', edit_document_path(@document)
+|  | 
+= link_to 'Back', documents_path
