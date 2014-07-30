@@ -43,6 +43,7 @@ gem 'rails_12factor'
 # Gem for autorization
 gem 'devise'
 # Gem for localizations
+gem 'rails-i18n'
 gem 'i18n'
 
 gem 'enumerize'
