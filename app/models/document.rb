@@ -5,5 +5,5 @@ extend  Enumerize
   mount_uploader  :file, FileUploader
 
   belongs_to :user
-  self.inheritance_column = nil 
+  self.inheritance_column = nil
 end
