@@ -17,6 +17,6 @@ deploy:
     secure: RNEulTh5A9Ivk2aKLjiiykuZyGslbYSaMVlof0KPH9Rg3RUgTMRf/qmrIUSOJCSC5KD1NUQ/ZRuiLsBrA7VUUBBxdAx7teN30jKOiMxV2gV5+K3ujXk9ZdRcX8dKJ2NkO/Eo/6QY2Ji6MD8wJQU9YewOdC+fQ7FkC7tKcC1iwgc=
   app:
     dev: dev-depositarium
-    master: depositarium
+    # master: depositarium
 
 #TODO: if pull request to dev branch, don't deploy, why?
