@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :document do
-    # type { Faker::Number.number(1) }
+    type :url
     url  { Faker::Internet.url }
     md5  "1bc29b36f623ba82aaf6724fd3b16718"
     password { Faker::Internet.password }
