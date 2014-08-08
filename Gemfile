@@ -39,6 +39,22 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'debugger', group: [:development, :test]
 gem 'heroku'
 gem 'rails_12factor'
+
+# Gem for autorization
+gem 'devise'
+# Gem for localizations
+gem 'rails-i18n'
+gem 'i18n'
+
+gem 'enumerize'
+gem 'carrierwave'
+gem 'simple_form'
+gem 'slim'
+gem 'slim-rails'
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer'
+gem 'less-rails'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry'
