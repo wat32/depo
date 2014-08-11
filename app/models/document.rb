@@ -4,6 +4,9 @@ extend  Enumerize
   enumerize :access_type, in: [:public, :private], default: :private
   mount_uploader  :file, FileUploader
 
+validates_presence_of :title
+
+
   belongs_to :user
   self.inheritance_column = nil
 end

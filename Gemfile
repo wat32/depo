@@ -14,6 +14,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+#For static pages
+gem 'high_voltage'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -53,7 +57,30 @@ gem 'slim'
 gem 'slim-rails'
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer'
-gem 'less-rails'
+
+gem 'bootstrap-sass'
+gem 'sass-rails', '~> 4.0.3'
+
+
+#Forms
+gem 'simple_form'
+gem 'bootstrap_form'
+
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_20]
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_layout'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+end
+
 
 group :development, :test do
   gem 'pry-rails'
